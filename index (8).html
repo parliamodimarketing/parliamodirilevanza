@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parliamo di rilevanza · Parliamo di Marketing</title>
+<meta name="description" content="Che cosa rende un brand rilevante? Le voci dei manager intervistati da Barbara Lorenzini per il libro Essere bravi non basta.">
+<meta property="og:title" content="Parliamo di rilevanza">
+<meta property="og:description" content="Che cosa rende un brand rilevante? Le voci di chi i brand li costruisce ogni giorno.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --verde:#115e30; --verde-scuro:#0d4a26; --inchiostro:#0f2418; --salvia:#3d6b4c; --menta:#d4ecdb; --bianco:#fff;
+    --sans:'Bricolage Grotesque', 'Helvetica Neue', Arial, sans-serif;
+    --serif:'Newsreader', Georgia, serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:var(--sans);color:var(--inchiostro);background:var(--bianco);-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  :focus-visible{outline:3px solid #f4f8c4;outline-offset:3px}
+  .lavagna{background-color:var(--verde);background-image:radial-gradient(rgba(255,255,255,.075) 1px,transparent 1.5px);background-size:20px 20px;color:var(--bianco)}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 clamp(20px,5vw,56px)}
+
+  /* APERTURA */
+  header.lavagna{padding:clamp(28px,4vw,44px) 0 clamp(56px,8vw,96px)}
+  .top{display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:15px;color:var(--menta)}
+  .top a{text-decoration:none;font-weight:600}
+  .top a:hover{text-decoration:underline}
+  .apertura{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:40px 56px;margin-top:clamp(44px,7vw,88px)}
+  h1{flex:1 1 520px;margin:0;font-weight:800;font-size:clamp(50px,8vw,112px);line-height:.9;letter-spacing:-.045em;font-variation-settings:"opsz" 96}
+  .matrice{flex:0 1 380px;margin:0 auto;width:100%}
+  .matrice svg{display:block;width:100%;height:auto;overflow:visible}
+  .intro{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px 56px;margin-top:clamp(32px,5vw,56px)}
+  .intro p{margin:0;max-width:34em;font-size:19px;line-height:1.65;color:var(--menta)}
+  .intro .nota{font-family:var(--serif);font-style:italic;font-size:19px;line-height:1.4;color:var(--bianco)}
+
+  /* INDICE */
+  main{padding:clamp(56px,8vw,96px) 0 0}
+  .indice-testa{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:12px 32px;margin-bottom:22px}
+  h2{margin:0;font-size:clamp(28px,4vw,40px);line-height:1.1;letter-spacing:-.025em;color:var(--verde);font-weight:800}
+  .apri-tutte{font:600 16px var(--sans);color:var(--verde);background:none;border:2px solid var(--verde);padding:9px 16px;cursor:pointer}
+  .apri-tutte:hover{background:var(--verde);color:var(--bianco)}
+  ol.voci{list-style:none;margin:0;padding:0;border-top:3px solid var(--verde)}
+  .voce{border-bottom:1px solid rgba(17,94,48,.28)}
+  .voce h3{margin:0}
+  .voce-btn{all:unset;box-sizing:border-box;cursor:pointer;width:100%;display:grid;grid-template-columns:1fr auto 44px;align-items:baseline;gap:8px 28px;padding:clamp(18px,2.6vw,28px) 4px}
+  .voce-btn:focus-visible{outline:3px solid var(--verde);outline-offset:-3px}
+  .nome{font-size:clamp(28px,5.2vw,58px);font-weight:800;line-height:1.02;letter-spacing:-.035em;color:var(--inchiostro);transition:color .2s}
+  .brand{font-family:var(--serif);font-style:italic;font-size:clamp(18px,2.3vw,26px);color:var(--salvia);text-align:right}
+  .segno{position:relative;width:34px;height:34px;align-self:center;border:2px solid var(--verde);border-radius:50%}
+  .segno::before,.segno::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:2px;margin:-1px 0 0 -7px;background:var(--verde);transition:transform .25s}
+  .segno::after{transform:rotate(90deg)}
+  .voce-btn:hover .nome,.voce-btn[aria-expanded="true"] .nome{color:var(--verde)}
+  .voce-btn[aria-expanded="true"] .segno{background:var(--verde)}
+  .voce-btn[aria-expanded="true"] .segno::before{background:var(--bianco)}
+  .voce-btn[aria-expanded="true"] .segno::after{transform:rotate(0);background:var(--bianco)}
+
+  .risposta{padding:8px 4px clamp(36px,5vw,56px)}
+  .postit{position:relative;max-width:720px;margin:14px auto 0;padding:46px clamp(24px,4vw,44px) 30px;background:var(--carta);transform:rotate(var(--rot));box-shadow:0 26px 30px -18px rgba(0,0,0,.45),0 2px 5px rgba(0,0,0,.14)}
+  .risposta:not([hidden]) .postit{animation:attacca .45s cubic-bezier(.2,.8,.3,1.2)}
+  @keyframes attacca{from{opacity:0;transform:translateY(-14px) rotate(calc(var(--rot) * -2))}to{opacity:1;transform:rotate(var(--rot))}}
+  .scotch{position:absolute;top:-13px;left:50%;width:120px;height:30px;margin-left:-60px;background:rgba(17,94,48,.18);transform:rotate(-3deg)}
+  .postit p{margin:0 0 .8em;font-size:17px;line-height:1.6}
+  .postit .domanda{font-family:var(--serif);font-style:italic;font-size:19px;line-height:1.4;color:var(--salvia);margin-bottom:1.1em}
+  .postit strong{display:block;margin:.3em 0;font-size:clamp(22px,2.6vw,27px);line-height:1.22;letter-spacing:-.015em;color:var(--verde);font-weight:800}
+  .postit .firma{margin:1.3em 0 0;padding-top:12px;border-top:1px solid rgba(15,36,24,.2);font-size:15px;line-height:1.45;color:var(--salvia)}
+  .postit .firma span{display:block;font-weight:700;color:var(--inchiostro)}
+
+  .spazio{display:grid;grid-template-columns:1fr 44px;align-items:center;gap:28px;padding:clamp(20px,2.6vw,28px) 4px;text-decoration:none;color:var(--salvia);border-bottom:1px dashed rgba(17,94,48,.45)}
+  .spazio span:first-child{font-size:clamp(22px,3.4vw,34px);font-weight:600;letter-spacing:-.02em}
+  .spazio em{font-family:var(--serif);font-size:.8em;color:var(--salvia)}
+  .spazio:hover span:first-child{color:var(--verde)}
+  .spazio .segno{border-style:dashed}
+
+  /* FILO E AZIONI */
+  .filo{margin:clamp(72px,10vw,120px) 0 clamp(48px,7vw,80px)}
+  .filo p{margin:0;font-size:clamp(32px,5.4vw,60px);line-height:1.04;font-weight:800;letter-spacing:-.035em;color:var(--verde)}
+  .filo cite{display:block;margin-top:1em;font-family:var(--serif);font-size:19px;color:var(--salvia)}
+  .azioni{display:flex;flex-wrap:wrap;gap:40px;align-items:center;padding-bottom:clamp(64px,8vw,96px)}
+  .azioni a{flex:1 1 280px;text-decoration:none}
+  .azioni .test{position:relative;background:#f4f8c4;padding:44px 34px 34px;transform:rotate(-1.5deg);box-shadow:0 26px 30px -18px rgba(0,0,0,.45),0 2px 5px rgba(0,0,0,.15)}
+  .azioni b{display:block;font-size:30px;line-height:1.1;letter-spacing:-.03em;color:var(--verde);font-weight:800}
+  .azioni span{display:block;margin-top:12px;font-size:17px;line-height:1.55}
+  .azioni i{display:inline-block;margin-top:22px;font-style:normal;font-weight:700;font-size:17px;padding:12px 22px;background:var(--verde);color:var(--bianco)}
+  .azioni .scrivi i{background:none;color:var(--verde);border:2px solid var(--verde);padding:10px 20px}
+  .azioni a:hover i{text-decoration:underline}
+  footer{padding:28px 0;font-size:15px;color:var(--menta)}
+  footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+  footer a{color:var(--bianco);font-weight:600}
+
+  @media (max-width:640px){
+    .voce-btn{grid-template-columns:1fr 40px}
+    .brand{grid-column:1;grid-row:2;text-align:left}
+    .segno{grid-column:2;grid-row:1 / span 2}
+  }
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="lavagna">
+  <div class="wrap">
+    <div class="top"><a href="https://www.parliamodimarketing.it/">Parliamo di Marketing</a></div>
+    <div class="apertura">
+      <h1>Parliamo<br>di rilevanza</h1>
+      <div class="matrice">
+        <svg viewBox="0 0 420 420" role="img" aria-label="La Matrice della Rilevanza: rilevanza potenziale in orizzontale, rilevanza riconosciuta in verticale, quattro quadranti">
+          <defs><filter id="gesso"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4"/></filter></defs>
+          <g filter="url(#gesso)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M60 372 C 140 370, 260 374, 392 369" stroke-width="3.2" stroke-opacity=".9"/>
+            <path d="M380 360 L 394 369 L 379 378" stroke-width="3.2" stroke-opacity=".9"/>
+            <path d="M62 370 C 60 290, 63 170, 59 30" stroke-width="3.2" stroke-opacity=".9"/>
+            <path d="M50 44 L 59 28 L 69 43" stroke-width="3.2" stroke-opacity=".9"/>
+            <path d="M226 52 C 224 150, 228 260, 225 360" stroke-width="2" stroke-opacity=".55" stroke-dasharray="7 9"/>
+            <path d="M72 205 C 160 203, 280 207, 378 204" stroke-width="2" stroke-opacity=".55" stroke-dasharray="7 9"/>
+          </g>
+          <g font-family="Newsreader, Georgia, serif" font-style="italic" fill="#d4ecdb" font-size="18">
+            <text x="144" y="292" text-anchor="middle">Invisibile</text>
+            <text x="144" y="130" text-anchor="middle">Promessa fragile</text>
+            <text x="302" y="292" text-anchor="middle">Sottovalutato</text>
+          </g>
+          <g transform="rotate(-4 302 128)">
+            <rect x="246" y="86" width="112" height="84" fill="#f4f8c4"/>
+            <rect x="282" y="78" width="40" height="14" fill="#fff" fill-opacity=".45" transform="rotate(5 302 85)"/>
+            <text x="302" y="124" text-anchor="middle" font-family="Bricolage Grotesque, Arial, sans-serif" font-weight="800" font-size="18" fill="#115e30">Brand</text>
+            <text x="302" y="146" text-anchor="middle" font-family="Bricolage Grotesque, Arial, sans-serif" font-weight="800" font-size="18" fill="#115e30">rilevante</text>
+          </g>
+          <g font-family="Bricolage Grotesque, Arial, sans-serif" fill="#fff" fill-opacity=".85" font-size="14" font-weight="600">
+            <text x="392" y="400" text-anchor="end">Rilevanza potenziale</text>
+            <text transform="translate(36 30) rotate(-90)" text-anchor="end">Rilevanza riconosciuta</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="intro">
+      <p>Che cosa rende un brand rilevante? Ne ho parlato con chi i brand li guida ogni giorno, e ognuno ha risposto dal proprio punto della mappa. Le prime voci vengono dalle interviste del libro <em>Essere bravi non basta</em>: le trovi con le loro parole e con la domanda a cui rispondevano.</p>
+      <p class="nota">Scegli un nome<br>e leggi la sua risposta.</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="indice-testa">
+      <h2>Le voci della rilevanza</h2>
+      <button class="apri-tutte" type="button" aria-pressed="false">Apri tutte le risposte</button>
+    </div>
+
+    <!-- Per aggiungere una voce: copia un blocco VOCE, cambia id (minuscolo, senza spazi), nome, brand, domanda, risposta e firma, e incollalo prima di SPAZIO LIBERO -->
+    <ol class="voci">
+    <!-- ===== VOCE: Margherita Galluzzo ===== -->
+    <li class="voce" id="galluzzo">
+      <h3>
+        <button class="voce-btn" aria-expanded="false" aria-controls="r-galluzzo">
+          <span class="nome">Margherita Galluzzo</span>
+          <span class="brand">WeRoad</span>
+          <span class="segno" aria-hidden="true"></span>
+        </button>
+      </h3>
+      <div class="risposta" id="r-galluzzo" role="region" aria-label="Risposta di Margherita Galluzzo" hidden>
+        <div class="postit" style="--carta: #eaf7dd; --rot: -1.2deg;">
+          <span class="scotch" aria-hidden="true"></span>
+          <p class="domanda">Per te, cos'è un brand rilevante?</p>
+          <p><strong>«Un brand rilevante è un brand che non chiede al cliente di credergli, ma gli dà delle ragioni per crederci.</strong> E che, soprattutto, ha il coraggio di lasciare che la propria identità venga vissuta, modificata, fatta propria dalle persone. Non difesa dietro un manuale di brand guidelines.</p>
+          <p>WeRoad è quello che è perché i WeRoader e i coordinatori ci hanno preso, ci hanno cucito sopra le loro storie, hanno storpiato il nostro logo, hanno costruito le loro sotto-community. Noi abbiamo creato lo spazio, ma il brand è il risultato di quello che loro hanno fatto dentro quello spazio. E credo che oggi sia questa la vera leva: smettere di pensare al brand come a qualcosa che possediamo, e iniziare a pensarlo come a un terreno comune.»</p>
+          <p class="firma"><span>Margherita Galluzzo</span>Brand Marketing Director, WeRoad</p>
+        </div>
+      </div>
+    </li>
+    <!-- ===== VOCE: Enrica Vitale ===== -->
+    <li class="voce" id="vitale">
+      <h3>
+        <button class="voce-btn" aria-expanded="false" aria-controls="r-vitale">
+          <span class="nome">Enrica Vitale</span>
+          <span class="brand">Vorwerk</span>
+          <span class="segno" aria-hidden="true"></span>
+        </button>
+      </h3>
+      <div class="risposta" id="r-vitale" role="region" aria-label="Risposta di Enrica Vitale" hidden>
+        <div class="postit" style="--carta: #f4f8c4; --rot: 0.9deg;">
+          <span class="scotch" aria-hidden="true"></span>
+          <p class="domanda">Cosa vuol dire quindi essere un brand rilevante?</p>
+          <p>«Per me essere rilevante come brand, vuol dire essere la prima soluzione a cui il consumatore pensa in risposta ai suoi desideri o bisogni quando deve prendere una decisione di acquisto. Vuol dire essere riconoscibili in mezzo a tanti grazie ad una comunicazione emozionale e coerente su tutti i canali e piattaforme. <strong>Vuol dire essere difficile da sostituire o da rinunciarvi, perché ti cambia la vita in meglio.</strong> Vuol dire essere nominati o raccomandati spontaneamente, non perché sei un influencer pagato per farlo, bensì perché ne sei ormai appassionato e attivo promotore. Ultimo ma non ultimo, nel caso di Thermomix®/Bimby® e Kobold®/Folletto®, vuol dire contatto umano e relazione personale di fiducia che difficilmente potrà essere sostituito da un semplice click.»</p>
+          <p class="firma"><span>Enrica Vitale</span>Direttore Marketing Bimby® Italia, Vorwerk</p>
+        </div>
+      </div>
+    </li>
+    <!-- ===== VOCE: Chiara Panesi ===== -->
+    <li class="voce" id="panesi">
+      <h3>
+        <button class="voce-btn" aria-expanded="false" aria-controls="r-panesi">
+          <span class="nome">Chiara Panesi</span>
+          <span class="brand">Automobili Lamborghini</span>
+          <span class="segno" aria-hidden="true"></span>
+        </button>
+      </h3>
+      <div class="risposta" id="r-panesi" role="region" aria-label="Risposta di Chiara Panesi" hidden>
+        <div class="postit" style="--carta: #c9eab9; --rot: -0.8deg;">
+          <span class="scotch" aria-hidden="true"></span>
+          <p class="domanda">Cosa rende un brand rilevante nel tempo?</p>
+          <p><strong>«La rilevanza è dinamica.</strong> Cambia con il mercato, i trend, i clienti. Non basta avere un buon prodotto: bisogna adattarsi, restare coerenti ma evolversi. Per esempio, anche il design può essere un valore. Un tempo certi colori venivano considerati "tamarri", oggi sono un modo per esprimere la propria personalità. I brand che sanno leggere questi cambiamenti e restare fedeli a se stessi sono quelli che durano.»</p>
+          <p class="firma"><span>Chiara Panesi</span>Customer Journey Designer, Automobili Lamborghini</p>
+        </div>
+      </div>
+    </li>
+    <!-- ===== VOCE: Allegra Panichi ===== -->
+    <li class="voce" id="panichi">
+      <h3>
+        <button class="voce-btn" aria-expanded="false" aria-controls="r-panichi">
+          <span class="nome">Allegra Panichi</span>
+          <span class="brand">Cortilia</span>
+          <span class="segno" aria-hidden="true"></span>
+        </button>
+      </h3>
+      <div class="risposta" id="r-panichi" role="region" aria-label="Risposta di Allegra Panichi" hidden>
+        <div class="postit" style="--carta: #dcf2e3; --rot: 1.1deg;">
+          <span class="scotch" aria-hidden="true"></span>
+          <p class="domanda">Cortilia è tech, food o brand? Come vi definite oggi?</p>
+          <p><strong>«Vogliamo essere un brand significativo, non solo utile.</strong> Un brand che le persone scelgono perché le rappresenta, perché è coerente, perché racconta qualcosa in cui credono. Non vendiamo semplicemente “spesa”, ma esperienze, storie, relazioni. Questo ci rende differenti.»</p>
+          <p class="firma"><span>Allegra Panichi</span>Brand Coordinator, Cortilia</p>
+        </div>
+      </div>
+    </li>
+
+    <!-- ===== SPAZIO LIBERO (resta sempre ultimo) ===== -->
+    <li>
+      <a class="spazio" href="https://www.parliamodimarketing.it/informazioni/">
+        <span>La prossima voce potrebbe essere la tua <em>Guidi un brand? Scrivimi.</em></span>
+        <span class="segno" aria-hidden="true"></span>
+      </a>
+    </li>
+    </ol>
+
+    <div class="filo">
+      <p>Un brand non è rilevante in assoluto. Lo è per qualcuno, in un certo momento e rispetto ad alternative concrete.</p>
+      <cite>Barbara Lorenzini, Essere bravi non basta</cite>
+    </div>
+
+    <div class="azioni">
+      <a class="test" href="https://www.parliamodimarketing.it/matrice-della-rilevanza/">
+        <b>E il tuo brand, dove si trova?</b>
+        <span>Otto domande, pochi minuti, gratis e anonimo. Alla fine scarichi la tua Matrice della Rilevanza.</span>
+        <i>Fai il test</i>
+      </a>
+      <a class="scrivi" href="https://www.parliamodimarketing.it/informazioni/">
+        <b>Guidi un brand?</b>
+        <span>Rispondi anche tu alla domanda, in poche righe. La tua risposta potrebbe entrare in questo elenco.</span>
+        <i>Scrivimi</i>
+      </a>
+    </div>
+  </div>
+</main>
+
+<footer class="lavagna">
+  <div class="wrap">
+    <span>Barbara Lorenzini · <a href="https://www.parliamodimarketing.it/">parliamodimarketing.it</a></span>
+    <span>Dal libro <em>Essere bravi non basta</em></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btns = Array.prototype.slice.call(document.querySelectorAll('.voce-btn'));
+  var tutte = document.querySelector('.apri-tutte');
+  function imposta(btn, aperta){
+    btn.setAttribute('aria-expanded', aperta ? 'true' : 'false');
+    document.getElementById(btn.getAttribute('aria-controls')).hidden = !aperta;
+  }
+  btns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var aperta = btn.getAttribute('aria-expanded') !== 'true';
+      imposta(btn, aperta);
+      if (aperta) { try { history.replaceState(null, '', '#' + btn.closest('.voce').id); } catch(e){} }
+    });
+  });
+  tutte.addEventListener('click', function(){
+    var apri = tutte.getAttribute('aria-pressed') !== 'true';
+    btns.forEach(function(b){ imposta(b, apri); });
+    tutte.setAttribute('aria-pressed', apri ? 'true' : 'false');
+    tutte.textContent = apri ? 'Chiudi tutte le risposte' : 'Apri tutte le risposte';
+  });
+  // Link diretto a una voce: .../#galluzzo apre e mostra quella risposta
+  var h = location.hash.slice(1);
+  if (h) {
+    var v = document.getElementById(h);
+    if (v && v.classList.contains('voce')) { imposta(v.querySelector('.voce-btn'), true); v.scrollIntoView(); }
+  }
+})();
+</script>
+</body>
+</html>
