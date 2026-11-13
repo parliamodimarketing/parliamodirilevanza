@@ -1,6 +1,6 @@
 # Parliamo di rilevanza
 
-Che cosa rende un brand rilevante? Questa pagina raccoglie le voci di chi i brand li guida ogni giorno: manager e professioniste intervistate da Barbara Lorenzini per il libro *Essere bravi non basta*.
+Che cosa rende un brand rilevante? Questa pagina raccoglie le voci di chi i brand li guida ogni giorno: manager e professionisti intervistati da Barbara Lorenzini, a partire dal libro *Essere bravi non basta*.
 
 Si clicca su un nome e la risposta si apre su un post-it, insieme alla domanda a cui la persona stava rispondendo.
 
@@ -14,9 +14,9 @@ Fa parte di [Parliamo di Marketing](https://www.parliamodimarketing.it/) e accom
 | Enrica Vitale | Vorwerk | Direttore Marketing Bimby® Italia |
 | Chiara Panesi | Automobili Lamborghini | Customer Journey Designer |
 | Allegra Panichi | Cortilia | Brand Coordinator |
-| Fabrizio Nucifora | Pasta Armando | Brand Sales & Marketing Director |
+| Fabrizio Nucifora | Pasta Armando (De Matteis Agroalimentare) | Global Sales & Marketing Director – Proprietary Brands Business Unit |
 
-Le risposte sono riportate con le parole delle intervistate, così come compaiono nel libro *Essere bravi non basta* (Barbara Lorenzini, 2026). La risposta di Allegra Panichi parte dal secondo paragrafo dell'intervista. La risposta di Fabrizio Nucifora è stata raccolta dopo l'uscita del libro, apposta per questa pagina, e trascritta dalla registrazione.
+Le risposte sono riportate con le parole delle persone intervistate, così come compaiono nel libro *Essere bravi non basta* (Barbara Lorenzini, 2026). La risposta di Allegra Panichi parte dal secondo paragrafo dell'intervista. La risposta di Fabrizio Nucifora è stata raccolta dopo l'uscita del libro, apposta per questa pagina, e trascritta dalla registrazione.
 
 ## Com'è fatta
 
@@ -54,7 +54,7 @@ Aggiungendo `#` e l'id in fondo all'indirizzo, la pagina si apre già sulla risp
 - `…/#panichi`
 - `…/#nucifora`
 
-Sono comodi per un post o per un messaggio all'intervistata.
+Sono comodi per un post o per un messaggio a chi ha risposto.
 
 ## Accessibilità
 
