@@ -14,8 +14,9 @@ Fa parte di [Parliamo di Marketing](https://www.parliamodimarketing.it/) e accom
 | Enrica Vitale | Vorwerk | Direttore Marketing Bimby® Italia |
 | Chiara Panesi | Automobili Lamborghini | Customer Journey Designer |
 | Allegra Panichi | Cortilia | Brand Coordinator |
+| Fabrizio Nucifora | Pasta Armando | Brand Sales & Marketing Director |
 
-Le risposte sono riportate con le parole delle intervistate, così come compaiono nel libro *Essere bravi non basta* (Barbara Lorenzini, 2026). La risposta di Allegra Panichi parte dal secondo paragrafo dell'intervista.
+Le risposte sono riportate con le parole delle intervistate, così come compaiono nel libro *Essere bravi non basta* (Barbara Lorenzini, 2026). La risposta di Allegra Panichi parte dal secondo paragrafo dell'intervista. La risposta di Fabrizio Nucifora è stata raccolta dopo l'uscita del libro, apposta per questa pagina, e trascritta dalla registrazione.
 
 ## Com'è fatta
 
@@ -51,6 +52,7 @@ Aggiungendo `#` e l'id in fondo all'indirizzo, la pagina si apre già sulla risp
 - `…/#vitale`
 - `…/#panesi`
 - `…/#panichi`
+- `…/#nucifora`
 
 Sono comodi per un post o per un messaggio all'intervistata.
 
