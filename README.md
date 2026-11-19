@@ -15,8 +15,9 @@ Fa parte di [Parliamo di Marketing](https://www.parliamodimarketing.it/) e accom
 | Chiara Panesi | Automobili Lamborghini | Customer Journey Designer |
 | Allegra Panichi | Cortilia | Brand Coordinator |
 | Fabrizio Nucifora | Pasta Armando (De Matteis Agroalimentare) | Global Sales & Marketing Director – Proprietary Brands Business Unit |
+| Gianluca Tacchella | Carrera Jeans | CEO |
 
-Le risposte sono riportate con le parole delle persone intervistate, così come compaiono nel libro *Essere bravi non basta* (Barbara Lorenzini, 2026). La risposta di Allegra Panichi parte dal secondo paragrafo dell'intervista. La risposta di Fabrizio Nucifora è stata raccolta dopo l'uscita del libro, apposta per questa pagina, e trascritta dalla registrazione.
+Le risposte sono riportate con le parole delle persone intervistate, così come compaiono nel libro *Essere bravi non basta* (Barbara Lorenzini, 2026), con la sola correzione della punteggiatura dove serviva. La risposta di Allegra Panichi parte dal secondo paragrafo dell'intervista. Le risposte di Fabrizio Nucifora e Gianluca Tacchella sono state raccolte dopo l'uscita del libro, apposta per questa pagina; quella di Nucifora è trascritta dalla registrazione.
 
 ## Com'è fatta
 
@@ -53,6 +54,7 @@ Aggiungendo `#` e l'id in fondo all'indirizzo, la pagina si apre già sulla risp
 - `…/#panesi`
 - `…/#panichi`
 - `…/#nucifora`
+- `…/#tacchella`
 
 Sono comodi per un post o per un messaggio a chi ha risposto.
 
