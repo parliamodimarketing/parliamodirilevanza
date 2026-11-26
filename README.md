@@ -17,8 +17,9 @@ Fa parte di [Parliamo di Marketing](https://www.parliamodimarketing.it/) e accom
 | Fabrizio Nucifora | Pasta Armando (De Matteis Agroalimentare) | Global Sales & Marketing Director – Proprietary Brands Business Unit |
 | Gianluca Tacchella | Carrera Jeans | CEO |
 | Marco Nuzzo | Freudenberg Home and Cleaning Solutions | Senior Director Distributor Management |
+| Fausta Fiumi | Bonomelli | Chief Division Officer – Food, Gruppo Montenegro |
 
-Le risposte sono riportate con le parole delle persone intervistate, così come compaiono nel libro *Essere bravi non basta* (Barbara Lorenzini, 2026), con la sola correzione della punteggiatura dove serviva. La risposta di Allegra Panichi parte dal secondo paragrafo dell'intervista. Le risposte di Fabrizio Nucifora, Gianluca Tacchella e Marco Nuzzo sono state raccolte dopo l'uscita del libro, apposta per questa pagina; quella di Nucifora è trascritta dalla registrazione.
+Le risposte sono riportate con le parole delle persone intervistate, così come compaiono nel libro *Essere bravi non basta* (Barbara Lorenzini, 2026), con la sola correzione della punteggiatura dove serviva. Nella risposta di Chiara Panesi, su sua richiesta, «tamarri» è diventato «troppo appariscenti». La risposta di Allegra Panichi parte dal secondo paragrafo dell'intervista. Le risposte di Fabrizio Nucifora, Gianluca Tacchella, Marco Nuzzo e Fausta Fiumi sono state raccolte dopo l'uscita del libro, apposta per questa pagina; quella di Nucifora è trascritta dalla registrazione.
 
 ## Com'è fatta
 
